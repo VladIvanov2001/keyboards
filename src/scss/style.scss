@@ -1,0 +1,65 @@
+h1{
+    color: blue;
+}
+#input{
+    width: 400px;
+    height: 100px;
+}
+
+.container__row{
+    &:nth-child(1){
+        button {
+            &:last-child {
+                width: 100px;
+            }
+        }
+    }
+    &:nth-child(3){
+        button {
+            &:last-child {
+                width: 100px;
+            }
+            &:first-child {
+                width: 100px;
+            }
+        }
+    }
+    &:nth-child(4){
+        button{
+            &:nth-child(12){
+                height: 60px;
+                width: 54px;
+                word-wrap: break-word;
+            }
+        }
+    }
+    &:nth-child(5){
+        button{
+            &:last-child, &:first-child{
+                width: 100px;
+            }
+            &:nth-child(4){
+                width: 260px;
+            }
+            &:nth-child(8), &:nth-child(6), &:nth-child(7){
+                height: 60px;
+                width: 56px;
+                word-wrap: break-word;
+            }
+
+        }
+    }
+    button{
+        transition: border-radius 0.3s ease, background 0.3s;
+        margin: 6px;
+        height: 35px;
+        width: 40px;
+        background: #fff;
+        &:nth-child(1){
+        width: 60px;
+        }
+        &:last-child{
+            width: 60px;
+        }
+    }
+}
